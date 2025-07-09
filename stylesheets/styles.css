@@ -277,7 +277,7 @@ header nav {
 header nav ul {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   background: none;
   border: none;
   width: 100%;
