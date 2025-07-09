@@ -1,74 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Sanga's Profile</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <img src="images/profile.jpg" alt="SangA Kim" style="width: 150px; border-radius: 50%; margin-bottom: 20px;">
-        <h1>Sanga's Profile</h1>
-        <p>Cloud & AI Engineer Portfolio</p>
+<head>
+  <meta charset="UTF-8">
+  <title>Sanga's Profile</title>
+  <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <img src="images/profile.jpg" alt="SangA Kim" style="width: 150px; border-radius: 50%; margin-bottom: 20px;">
+      <h1>Sanga's Profile</h1>
+      <nav>
         <ul>
-          <li><a href="mailto:cometokr1@naver.com">Email <strong>SangA</strong></a></li>
-          <li><a href="https://github.com/tkddk0108">GitHub <strong>@tkddk0108</strong></a></li>
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#skillset">SkillSet</a></li>
+          <li><a href="#cloud-native">Cloud Native Project</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </header>
+      </nav>
+    </header>
 
-      <section>
-        <h1>SangA Kim</h1>
-        <p><strong>Mobile:</strong> 010-7732-1085<br>
-           <strong>Email:</strong> cometokr1@naver.com</p>
+    <div class="divider"></div>
 
-        <h2>Objective</h2>
-        <p>I will become an engineer who solves complex problems through collaboration and creative thinking, and grow into a valuable member of a diverse and innovative team by continuously taking on new challenges.</p>
+    <section>
+      <h2 id="intro">Introduction</h2>
+      <p>안녕하세요! 클라우드 네이티브와 인공지능 기술을 기반으로 실용적인 서비스를 만드는 것을 좋아하는 개발자 김상아입니다.</p>
 
-        <h2>Education</h2>
-        <ul>
-          <li><strong>Dankook Univ.</strong> – B.S in Software Engineering, 2020–2025 (GPA 3.74/4.5)</li>
-          <li><strong>VSB – Technical University of Ostrava</strong> – Exchange Student, 2023</li>
-        </ul>
+      <h2 id="skillset">SkillSet</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, JavaScript</li>
+        <li><strong>Frameworks:</strong> FastAPI, React Native</li>
+        <li><strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes, Terraform, Ansible</li>
+        <li><strong>Tools:</strong> Git, Prometheus, Grafana, Figma, MySQL</li>
+      </ul>
 
-        <h2>Skills</h2>
-        <ul>
-          <li>Languages: Python, JavaScript</li>
-          <li>Frameworks: FastAPI, React Native</li>
-          <li>Cloud/DevOps: AWS, Docker, Kubernetes, Terraform, Ansible, GitHub Actions, ArgoCD</li>
-          <li>Tools: Git, Figma, Prometheus, Grafana, MySQL</li>
-        </ul>
+      <h2 id="cloud-native">Cloud Native Project</h2>
 
-        <h2>Projects</h2>
-        <ul>
-          <li><strong>Petogether</strong>: Multi-pet diary app (React Native, FastAPI)</li>
-          <li><strong>쫑알쫑알</strong>: AI 기반 동화 생성 앱 (React Native, AI, Cloud)</li>
-          <li><strong>Aira</strong>: OpenAI 챗봇 기반 클라우드 최적화 프로젝트</li>
-        </ul>
+      <div class="project">
+        <img src="images/aira1.jpg" alt="Aira-1">
+        <h3>Aira-1: AI 기반 클라우드 챗봇 최적화</h3>
+        <p>OpenAI 챗봇을 EC2, ALB, AutoScaling, Prometheus를 이용해 퍼포먼스 튜닝한 프로젝트입니다.</p>
+        <p class="skills">[AWS, EC2, ALB, Prometheus, FastAPI, OpenAI API]</p>
+      </div>
 
-        <h2>Certifications</h2>
-        <ul>
-          <li>AWS Solutions Architect – Associate (2024)</li>
-          <li>SQLD – 한국데이터산업진흥원 (2025)</li>
-          <li>CSTS – 한국정보통신기술협회 (2024)</li>
-        </ul>
+      <div class="project">
+        <img src="images/aira2.jpg" alt="Aira-2">
+        <h3>Aira-2: 메시지 트랜잭션 무결성 보장</h3>
+        <p>ECS Fargate와 SQS 기반으로 신뢰성 높은 메시지 큐 시스템을 구성했습니다.</p>
+        <p class="skills">[ECS Fargate, SQS, DLQ, FastAPI, GitHub Actions]</p>
+      </div>
 
-        <h2>GitHub</h2>
-        <a href="https://github.com/tkddk0108/tkddk0108">https://github.com/tkddk0108/tkddk0108</a>
-      </section>
+      <div class="project">
+        <img src="images/aira3.jpg" alt="Aira-3">
+        <h3>Aira-3: GitOps 기반 인프라 자동화</h3>
+        <p>Terraform, ArgoCD를 사용하여 자동 배포 및 모니터링 시스템을 구축한 프로젝트입니다.</p>
+        <p class="skills">[Terraform, Ansible, ArgoCD, HPA, GitHub Actions]</p>
+      </div>
 
-      <footer>
-        <p>Maintained by <a href="https://github.com/tkddk0108">SangA Kim</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme customized from <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-  </body>
+      <h2 id="projects">Project</h2>
+
+      <div class="project">
+        <img src="images/petogether.jpg" alt="Petogether">
+        <h3>Petogether</h3>
+        <p>반려동물을 위한 다이어리 앱으로, 여러 반려동물을 동시에 관리할 수 있도록 설계했습니다.</p>
+        <p class="skills">[React Native, FastAPI, MySQL]</p>
+      </div>
+
+      <div class="project">
+        <img src="images/zzong.jpg" alt="쫑알쫑알">
+        <h3>쫑알쫑알</h3>
+        <p>아이들이 챗봇과 대화하며 동화를 생성하고, 이미지 및 음성으로 즐길 수 있는 AI 기반 서비스입니다.</p>
+        <p class="skills">[React Native, Cloud Infra, OpenAI API, ElevenLabs]</p>
+      </div>
+
+      <h2 id="contact">Contact</h2>
+      <p><strong>Email:</strong> cometokr1@naver.com</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/tkddk0108">tkddk0108</a></p>
+    </section>
+  </div>
+</body>
 </html>
