@@ -108,6 +108,11 @@ header {
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 header ul {
@@ -237,16 +242,22 @@ nav ul li {
 
 header nav {
   margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 header nav ul {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   background: none;
   border: none;
   width: 100%;
   padding: 0;
+  align-items: center;
 }
 
 header nav ul li {
@@ -259,13 +270,14 @@ header nav ul li {
 header nav ul li a {
   display: block;
   padding: 10px 0;
-  font-size: 15px;
+  font-size: 18px;
   color: #444;
   background: none;
   border-radius: 0;
   font-weight: 500;
   letter-spacing: 1px;
   transition: color 0.2s;
+  text-align: center;
 }
 
 header nav ul li a:hover,
