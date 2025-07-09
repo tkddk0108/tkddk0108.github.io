@@ -235,6 +235,45 @@ nav ul li {
   color: #666;
 }
 
+header nav {
+  margin-top: 30px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 0;
+}
+
+header nav ul li {
+  width: 100%;
+  float: none;
+  border: none;
+  text-align: center;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #444;
+  background: none;
+  border-radius: 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+header nav ul li a:hover,
+header nav ul li a:focus {
+  color: #39c;
+  background: #f4f4f4;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
