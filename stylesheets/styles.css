@@ -232,7 +232,7 @@ header nav {
 header nav ul {
   display: flex;
   flex-direction: column;   /* 세로 정렬 */
-  gap: 8px;                 /* 메뉴 항목 간 간격 (줄이려면 5px, 늘리려면 12px 등) */
+  gap: 4px;                 /* 메뉴 항목 간 간격 (원래 8px에서 반으로 줄임) */
   background: none;
   border: none;
   width: 100%;
@@ -261,9 +261,11 @@ header nav ul li a {
   letter-spacing: 0.5px;    /* 자간 (늘리려면 1px) */
   transition: color 0.2s;   /* 호버 효과 애니메이션 */
   text-align: center;
-  white-space: nowrap;      /* 줄바꿈 방지 */
-  overflow: hidden;         /* 넘치는 텍스트 숨김 */
-  text-overflow: ellipsis;  /* 넘치는 텍스트 ... 표시 */
+  /* white-space: nowrap; 삭제 - 줄바꿈 허용 */
+  /* overflow: hidden; 삭제 - 넘치는 텍스트 보이기 */
+  /* text-overflow: ellipsis; 삭제 - ... 표시 제거 */
+  word-wrap: break-word;    /* 긴 단어도 줄바꿈 */
+  line-height: 1.2;         /* 줄 간격 조정 */
 }
 
 /* 네비게이션 링크 호버/포커스 효과 */
