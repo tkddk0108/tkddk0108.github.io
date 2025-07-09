@@ -194,6 +194,47 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+.divider {
+  width: 1px;
+  background-color: #e0e0e0;
+  float: left;
+  height: 100vh;
+  margin: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project h3 {
+  margin: 10px 0 5px;
+}
+
+.project p {
+  margin: 5px 0;
+}
+
+.skills {
+  font-size: 14px;
+  color: #666;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
