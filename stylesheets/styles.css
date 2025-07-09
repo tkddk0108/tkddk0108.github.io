@@ -237,7 +237,7 @@ header nav ul {
   border: none;
   width: 100%;
   padding: 0;
-  align-items: center;
+  align-items: center;      /* 모든 메뉴 항목을 항상 가운데 정렬 */
 }
 
 /* 네비게이션 각 항목 */
