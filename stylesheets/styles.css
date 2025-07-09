@@ -175,10 +175,10 @@ header h1 {
 } */
 
 header li {
-  width:89px;
-  float:left;
-  border-right:1px solid #e0e0e0;
-  height:40px;
+  float: none;
+  width: auto;
+  border-right: none;
+  height: auto;
 }
 
 header li:first-child a {
@@ -240,17 +240,16 @@ header nav {
 header nav ul {
   display: flex;
   flex-direction: column;
-  gap: 10px;                /* 메뉴 간격 키움 */
-  width: 100%;
-  padding: 0;
   align-items: center;
+  gap: 10px;                /* 메뉴 간격 키움 */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* 네비게이션 각 항목 */
 header nav ul li {
   width: 100%;
-  float: none;
-  border: none;
   text-align: center;
 }
 
@@ -262,10 +261,10 @@ header nav ul li a {
   font-size: 14px;          /* 글씨 크기 (키우려면 14px, 15px 등) */
   color: #444;              /* 글씨 색상 */
   background: none;
-  border-radius: 0;
+  border-radius: 5px;
   font-weight: 500;         /* 글씨 굵기 (더 굵게: 600, 더 얇게: 400) */
   letter-spacing: 0.5px;    /* 자간 (늘리려면 1px) */
-  transition: color 0.2s;   /* 호버 효과 애니메이션 */
+  transition: color 0.2s ease;   /* 호버 효과 애니메이션 */
   text-align: center;
   white-space: nowrap;
   /* overflow: hidden; 삭제 - 넘치는 텍스트 보이기 */
