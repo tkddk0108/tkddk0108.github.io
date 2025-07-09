@@ -233,6 +233,7 @@ header nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 40px; /* 🔥 이 부분 추가: 메뉴를 아래로 내려줌 */
 }
 
 /* 네비게이션 목록 */
@@ -301,9 +302,9 @@ section {
   flex: 1;                  /* 남은 공간 모두 차지 */
   width: auto;
   padding-bottom: 50px;     /* 하단 여백 */
-  margin-left: 300px;
+  margin-left: 350px;
   margin-right: auto;
-  padding-left: 20px;       /* 왼쪽 여백 (구분선과의 간격) */
+  padding-left: 32px;       /* 왼쪽 여백 (구분선과의 간격) */
   padding-top: 0;           /* 상단 여백 */
   display: block;
 }
