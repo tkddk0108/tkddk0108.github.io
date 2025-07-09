@@ -115,11 +115,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
 }
 
 header img {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
