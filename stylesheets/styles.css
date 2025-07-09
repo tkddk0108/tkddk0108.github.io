@@ -1,3 +1,7 @@
+/* ==========================================================================
+   기본 스타일 설정 (전체 페이지)
+   ========================================================================== */
+
 body {
   background-color: #fff;
   padding:50px;
@@ -5,6 +9,10 @@ body {
   color:#595959;
   font-weight:400;
 }
+
+/* ==========================================================================
+   제목 스타일 (h1, h2, h3 등)
+   ========================================================================== */
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
@@ -34,6 +42,10 @@ h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+/* ==========================================================================
+   링크 스타일
+   ========================================================================== */
+
 a {
   color:#39c;
   text-decoration:none;
@@ -54,15 +66,23 @@ a:hover small {
   color:#777;
 }
 
+/* ==========================================================================
+   전체 레이아웃 컨테이너
+   ========================================================================== */
+
 .wrapper {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1200px;        /* 전체 최대 너비 */
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: row;      /* 가로 정렬: header | divider | section */
+  align-items: flex-start;  /* 상단 정렬 */
   min-height: 100vh;
 }
+
+/* ==========================================================================
+   기타 콘텐츠 스타일 (테이블, 코드 등)
+   ========================================================================== */
 
 blockquote {
   border-left:1px solid #e5e5e5;
@@ -108,28 +128,35 @@ img {
   max-width:100%;
 }
 
+/* ==========================================================================
+   왼쪽 헤더 영역 (프로필 + 네비게이션)
+   ========================================================================== */
+
 header {
-  width: 320px;
+  width: 320px;             /* 헤더 전체 너비 (넓히려면 350px, 400px 등으로 변경) */
   -webkit-font-smoothing:subpixel-antialiased;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 0;
+  flex-direction: column;   /* 세로 정렬: 프로필 사진 → 이름 → 네비게이션 */
+  align-items: center;      /* 가운데 정렬 */
+  flex-shrink: 0;           /* 크기 고정 (줄어들지 않음) */
 }
 
+/* 프로필 사진 스타일 */
 header img {
-  margin-top: 30px;
-  margin-bottom: 0px;
+  margin-top: 30px;         /* 상단 여백 (줄이려면 20px, 늘리려면 40px 등) */
+  margin-bottom: 0px;       /* 하단 여백 */
 }
 
+/* 프로필 이름(제목) 스타일 */
 header h1 {
-  margin-bottom: 15px;
-  font-size: 28px;
-  font-weight: 600;
+  margin-bottom: 15px;      /* 이름 아래 여백 (줄이려면 10px, 늘리려면 20px 등) */
+  font-size: 28px;          /* 이름 글씨 크기 */
+  font-weight: 600;         /* 이름 글씨 굵기 */
   text-align: center;
 }
 
-header ul {
+/* 기존 헤더 ul 스타일 (사용하지 않음, 삭제 가능) */
+/* header ul {
   list-style:none;
   height:40px;
   padding:0;
@@ -137,7 +164,7 @@ header ul {
   border-radius:5px;
   border:1px solid #e0e0e0;
   width:270px;
-}
+} */
 
 header li {
   width:89px;
@@ -188,22 +215,136 @@ header ul a strong {
   color:#222;
 }
 
+/* ==========================================================================
+   네비게이션 메뉴 스타일
+   ========================================================================== */
+
+/* 네비게이션 전체 컨테이너 */
+header nav {
+  margin-top: 20px;         /* 프로필 이름과 네비게이션 사이 간격 (조정 가능) */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 네비게이션 목록 */
+header nav ul {
+  display: flex;
+  flex-direction: column;   /* 세로 정렬 */
+  gap: 8px;                 /* 메뉴 항목 간 간격 (줄이려면 5px, 늘리려면 12px 등) */
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 0;
+  align-items: center;
+}
+
+/* 네비게이션 각 항목 */
+header nav ul li {
+  width: 100%;
+  float: none;
+  border: none;
+  text-align: center;
+}
+
+/* 네비게이션 링크 스타일 */
+header nav ul li a {
+  display: block;
+  width: 100%;              /* 부모 요소(li) 전체 너비 */
+  padding: 8px 0;           /* 위아래 패딩 (늘리려면 10px 0) */
+  font-size: 13px;          /* 글씨 크기 (키우려면 14px, 15px 등) */
+  color: #444;              /* 글씨 색상 */
+  background: none;
+  border-radius: 0;
+  font-weight: 500;         /* 글씨 굵기 (더 굵게: 600, 더 얇게: 400) */
+  letter-spacing: 0.5px;    /* 자간 (늘리려면 1px) */
+  transition: color 0.2s;   /* 호버 효과 애니메이션 */
+  text-align: center;
+  white-space: nowrap;      /* 줄바꿈 방지 */
+  overflow: hidden;         /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis;  /* 넘치는 텍스트 ... 표시 */
+}
+
+/* 네비게이션 링크 호버/포커스 효과 */
+header nav ul li a:hover,
+header nav ul li a:focus {
+  color: #39c;              /* 호버 시 글씨 색상 */
+  /*background: #f4f4f4;      /* 호버 시 배경 색상 */
+}
+
+/* ==========================================================================
+   구분선 스타일
+   ========================================================================== */
+
+.divider {
+  width: 1px;               /* 구분선 두께 (더 굵게: 2px) */
+  background-color: #e0e0e0; /* 구분선 색상 */
+  height: 100%;
+  margin: 0 20px;           /* 좌우 여백 (늘리려면 30px) */
+  /* min-height: 100vh;        /* 최소 높이 (화면 전체) */
+  flex-shrink: 0;           /* 크기 고정 */
+}
+
+/* ==========================================================================
+   메인 콘텐츠 영역 (오른쪽 본문)
+   ========================================================================== */
+
 section {
-  flex: 1;
+  flex: 1;                  /* 남은 공간 모두 차지 */
   width: auto;
-  padding-bottom: 50px;
+  padding-bottom: 50px;     /* 하단 여백 */
   margin-left: 0;
-  padding-left: 20px;
-  padding-top: 0;
+  padding-left: 20px;       /* 왼쪽 여백 (구분선과의 간격) */
+  padding-top: 0;           /* 상단 여백 */
   display: block;
 }
 
-@media screen and (min-width: 700px) {
-  section {
-    margin-left: 0;
-    padding-left: 20px;
-  }
+/* ==========================================================================
+   프로젝트 카드 스타일
+   ========================================================================== */
+
+nav ul {
+  list-style: none;
+  padding: 0;
 }
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+/* 각 프로젝트 카드 */
+.project {
+  margin-bottom: 40px;      /* 프로젝트 간 간격 */
+}
+
+/* 프로젝트 이미지 */
+.project img {
+  width: 100%;              /* 이미지 너비 */
+  max-width: 400px;         /* 최대 너비 제한 */
+  border-radius: 10px;      /* 모서리 둥글기 */
+  margin-bottom: 10px;      /* 이미지 아래 간격 */
+}
+
+/* 프로젝트 제목 */
+.project h3 {
+  margin: 10px 0 5px;       /* 제목 위아래 간격 */
+}
+
+/* 프로젝트 설명 */
+.project p {
+  margin: 5px 0;            /* 설명 위아래 간격 */
+}
+
+/* 기술 스택 텍스트 */
+.skills {
+  font-size: 14px;          /* 기술 스택 글씨 크기 */
+  color: #666;              /* 기술 스택 글씨 색상 (회색) */
+}
+
+/* ==========================================================================
+   기타 스타일
+   ========================================================================== */
 
 small {
   font-size:11px;
@@ -224,94 +365,15 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
-.divider {
-  width: 1px;
-  background-color: #e0e0e0;
-  height: 100%;
-  margin: 0 20px;
-  min-height: 100vh;
-  flex-shrink: 0;
-}
+/* ==========================================================================
+   반응형 스타일 (작은 화면)
+   ========================================================================== */
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  margin-bottom: 10px;
-}
-
-.project {
-  margin-bottom: 40px;
-}
-
-.project img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.project h3 {
-  margin: 10px 0 5px;
-}
-
-.project p {
-  margin: 5px 0;
-}
-
-.skills {
-  font-size: 14px;
-  color: #666;
-}
-
-header nav {
-  margin-top: 60px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-header nav ul {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  background: none;
-  border: none;
-  width: 100%;
-  padding: 0;
-  align-items: center;
-}
-
-header nav ul li {
-  width: 100%;
-  float: none;
-  border: none;
-  text-align: center;
-}
-
-header nav ul li a {
-  display: block;
-  padding: 8px 0;
-  font-size: 13px;
-  color: #444;
-  background: none;
-  border-radius: 0;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  transition: color 0.2s;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-header nav ul li a:hover,
-header nav ul li a:focus {
-  color: #39c;
-  background: #f4f4f4;
+@media screen and (min-width: 700px) {
+  section {
+    margin-left: 0;
+    padding-left: 20px;     /* 큰 화면에서 왼쪽 여백 */
+  }
 }
 
 @media print, screen and (max-width: 960px) {
