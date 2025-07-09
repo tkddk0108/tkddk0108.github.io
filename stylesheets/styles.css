@@ -73,6 +73,7 @@ a:hover small {
 /* ===== wrapper는 오른쪽으로 밀기 ===== */
 .wrapper {
   display: flex;
+  max-width: 1200px;
   margin-left: 300px; /* 헤더 너비만큼 밀기 */
   padding: 50px 30px;
   justify-content: center;
@@ -300,7 +301,8 @@ section {
   flex: 1;                  /* 남은 공간 모두 차지 */
   width: auto;
   padding-bottom: 50px;     /* 하단 여백 */
-  margin-left: 0;
+  margin-left: 300px;
+  margin-right: auto;
   padding-left: 20px;       /* 왼쪽 여백 (구분선과의 간격) */
   padding-top: 0;           /* 상단 여백 */
   display: block;
