@@ -133,6 +133,13 @@ img {
    ========================================================================== */
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   width: 320px;             /* 헤더 전체 너비 (넓히려면 350px, 400px 등으로 변경) */
   -webkit-font-smoothing:subpixel-antialiased;
   display: flex;
