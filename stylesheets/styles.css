@@ -131,7 +131,16 @@ img {
    왼쪽 헤더 영역 (프로필 + 네비게이션)
    ========================================================================== */
 
-/* ===== 헤더 영역: 왼쪽 고정 ===== */
+/* ===== sidebar-content: 프로필+이름+메뉴 세로 정렬 ===== */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 40px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -141,11 +150,8 @@ header {
   background-color: #fff;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;  /* 세로 가운데 정렬 */
+  justify-content: center;  /* sidebar-content 세로 정렬 */
   z-index: 1000;
-  padding: 40px 0;          /* 상하 여백 추가 */
 }
 
 /* 프로필 사진 스타일 */
