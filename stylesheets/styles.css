@@ -247,7 +247,7 @@ header nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;                /* 메뉴 간격 키움 */
+  gap: 5px;         /* 메뉴 간격을 10px → 5px로 축소 */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -255,35 +255,32 @@ header nav ul {
 
 /* 네비게이션 각 항목 */
 header nav ul li {
-  width: 100%;
+  width: auto;      /* li 너비를 컨텐츠에 맞춤 */
   text-align: center;
 }
 
 /* 네비게이션 링크 스타일 */
 header nav ul li a {
   display: block;
-  width: 150px;              /* 부모 요소(li) 전체 너비 */
-  padding: 8px 0;           /* 위아래 패딩 (늘리려면 10px 0) */
-  font-size: 14px;          /* 글씨 크기 (키우려면 14px, 15px 등) */
-  color: #444;              /* 글씨 색상 */
+  width: auto;      /* 고정 너비 제거 */
+  padding: 6px 0;   /* 위아래 패딩 약간 줄임 */
+  font-size: 14px;
+  color: #444;
   background: none;
   border-radius: 5px;
-  font-weight: 500;         /* 글씨 굵기 (더 굵게: 600, 더 얇게: 400) */
-  letter-spacing: 0.5px;    /* 자간 (늘리려면 1px) */
-  transition: color 0.2s ease;   /* 호버 효과 애니메이션 */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
   text-align: center;
   white-space: nowrap;
-  /* overflow: hidden; 삭제 - 넘치는 텍스트 보이기 */
-  /* text-overflow: ellipsis; 삭제 - ... 표시 제거 */
-  word-wrap: break-word;    /* 긴 단어도 줄바꿈 */
-  line-height: 1.2;         /* 줄 간격 조정 */
+  word-wrap: break-word;
+  line-height: 1.2;
 }
 
 /* 네비게이션 링크 호버/포커스 효과 */
 header nav ul li a:hover,
 header nav ul li a:focus {
-  color: #39c;              /* 호버 시 글씨 색상 */
-  /*background: #f4f4f4;      /* 호버 시 배경 색상 */
+  color: #39c;
 }
 
 /* ==========================================================================
