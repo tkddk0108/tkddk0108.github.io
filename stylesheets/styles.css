@@ -261,7 +261,7 @@ header nav ul li a {
   letter-spacing: 0.5px;    /* 자간 (늘리려면 1px) */
   transition: color 0.2s;   /* 호버 효과 애니메이션 */
   text-align: center;
-  white-space: nowrap; 삭제 - 줄바꿈 허용 */
+  white-space: nowrap;
   /* overflow: hidden; 삭제 - 넘치는 텍스트 보이기 */
   /* text-overflow: ellipsis; 삭제 - ... 표시 제거 */
   word-wrap: break-word;    /* 긴 단어도 줄바꿈 */
