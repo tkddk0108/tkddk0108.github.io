@@ -61,6 +61,7 @@ a:hover small {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  min-height: 100vh;
 }
 
 blockquote {
@@ -108,13 +109,12 @@ img {
 }
 
 header {
-  width:270px;
-  float:left;
-  position:fixed;
+  width: 270px;
   -webkit-font-smoothing:subpixel-antialiased;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
 }
 
 header img {
@@ -191,17 +191,17 @@ header ul a strong {
 section {
   flex: 1;
   width: auto;
-  float: none;
   padding-bottom: 50px;
   margin-left: 0;
-  padding-left: 0;
+  padding-left: 20px;
+  padding-top: 0;
   display: block;
 }
 
 @media screen and (min-width: 700px) {
   section {
     margin-left: 0;
-    padding-left: 0;
+    padding-left: 20px;
   }
 }
 
@@ -230,6 +230,7 @@ footer {
   height: 100%;
   margin: 0 20px;
   min-height: 100vh;
+  flex-shrink: 0;
 }
 
 nav ul {
