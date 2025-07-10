@@ -5,6 +5,7 @@
   }
   
   .vertical-nav ul {
+    all: unset;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -12,6 +13,7 @@
   }
   
   .vertical-nav li {
+    display: block;
     margin: 10px 0;
     text-align: center;
   }
@@ -28,6 +30,35 @@
   
   .vertical-nav li a:hover,
   .vertical-nav li a.active {
+    color: #007bff;
+    border-bottom: 1px solid #007bff;
+  }
+
+  header .vertical-nav ul {
+    all: unset;
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header .vertical-nav li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  header .vertical-nav li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    letter-spacing: 1px;
+    display: block;
+    padding: 4px 0;
+    transition: all 0.3s;
+  }
+  
+  header .vertical-nav li a:hover,
+  header .vertical-nav li a.active {
     color: #007bff;
     border-bottom: 1px solid #007bff;
   }
