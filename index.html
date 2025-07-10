@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>SangA's Portfolio</title>
+    <title>Minimal by Steve Smith</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -20,37 +20,44 @@
         object-fit: cover;
         margin-bottom: 10px;
       }
-      .nav-bar {
-        margin-top: 20px;
+
+      .vertical-nav {
+        margin-top: 30px;
       }
-      .nav-bar ul {
+
+      .vertical-nav ul {
         list-style: none;
         padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+        margin: 0;
       }
-      .nav-bar li a {
+
+      .vertical-nav li {
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      .vertical-nav li a {
         text-decoration: none;
+        color: #333;
         font-size: 13px;
-        color: #555;
-        background-color: #f4f4f4;
-        border: 1px solid #ddd;
-        padding: 5px 10px;
-        border-radius: 5px;
-        transition: 0.2s;
+        letter-spacing: 1px;
+        display: block;
+        padding: 4px 0;
+        transition: all 0.3s;
       }
-      .nav-bar li a:hover {
-        background-color: #eee;
-        color: #000;
+
+      .vertical-nav li a:hover,
+      .vertical-nav li a.active {
+        color: #007bff;
+        border-bottom: 1px solid #007bff;
       }
     </style>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <!-- ✅ 추가: 프로필 이미지 -->
-        <img src="profile.png" alt="Profile" class="profile-img">
+        <!-- ✅ 프로필 이미지 추가 -->
+        <img src="profile.jpg" alt="Profile" class="profile-img">
 
         <h1>Minimal</h1>
         <p>A Theme for GitHub Pages</p>
@@ -61,13 +68,18 @@
           <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
         </ul>
 
-        <!-- ✅ 추가: 네비게이션 바 -->
-        <nav class="nav-bar">
+        <!-- ✅ 세로 네비게이션 바 추가 -->
+        <nav class="vertical-nav">
           <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#skillset">SkillSet</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" class="active">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#career">CAREER</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </header>
