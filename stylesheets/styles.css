@@ -55,8 +55,8 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
-  margin:0 auto;
+  width: 1300px; /* 충분히 넓게! */
+  margin: 0 auto;
 }
 
 blockquote {
@@ -175,9 +175,10 @@ header .download-links a strong {
 }
 
 section {
-  width:500px;
-  float:right;
-  padding-bottom:50px;
+  width: 700px;
+  margin-left: 400px; /* header(270px) + 여유(30px) */
+  padding-bottom: 50px;
+  /* float: right;  << 삭제! */
 }
 
 small {
