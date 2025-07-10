@@ -108,9 +108,14 @@ header {
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
+  /* ✅ 아래 3줄 코드 추가 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header > ul {
+/* Download Links Section */
+header > ul.download-links {
   list-style:none;
   height:40px;
   padding:0;
@@ -120,22 +125,22 @@ header > ul {
   width:270px;
 }
 
-header li {
+header .download-links li {
   width:89px;
   float:left;
   border-right:1px solid #e0e0e0;
   height:40px;
 }
 
-header li:first-child a {
+header .download-links li:first-child a {
   border-radius:5px 0 0 5px;
 }
 
-header li:last-child a {
+header .download-links li:last-child a {
   border-radius:0 5px 5px 0;
 }
 
-header ul a {
+header .download-links a {
   line-height:1;
   font-size:11px;
   color:#999;
@@ -145,11 +150,11 @@ header ul a {
   height:34px;
 }
 
-header ul a:hover {
+header .download-links a:hover {
   color:#999;
 }
 
-header ul a:active {
+header .download-links a:active {
   background-color:#f0f0f0;
 }
 
@@ -158,12 +163,12 @@ strong {
   font-weight:500;
 }
 
-header ul li + li + li {
+header .download-links li + li + li {
   border-right:none;
   width:89px;
 }
 
-header ul a strong {
+header .download-links a strong {
   font-size:14px;
   display:block;
   color:#222;
@@ -222,7 +227,7 @@ footer {
     display:inline;
   }
 
-  header ul {
+  header ul.download-links { /* 수정 */
     position:absolute;
     right:50px;
     top:52px;
@@ -238,7 +243,7 @@ footer {
     padding:0;
   }
 
-  header ul, header p.view {
+  header ul.download-links, header p.view { /* 수정 */
     position:static;
   }
 
@@ -252,11 +257,11 @@ footer {
     padding:15px;
   }
 
-  header ul {
+  header ul.download-links { /* 수정 */
     width:99%;
   }
 
-  header li, header ul li + li + li {
+  header .download-links li, header .download-links li + li + li { /* 수정 */
     width:33%;
   }
 }

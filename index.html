@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Minimal by Steve Smith</title>
+    <title>SangA's Portfolio</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,8 +15,8 @@
 
     <style>
       .profile-img {
-        width: 100px;
-        height: 100px;
+        width: 140px;  /* 100px에서 140px로 수정 */
+        height: 140px; /* 100px에서 140px로 수정 */
         border-radius: 50%;
         object-fit: cover;
         margin-bottom: 10px;
@@ -52,6 +52,9 @@
         color: #007bff;
         border-bottom: 1px solid #007bff;
       }
+      .project-item {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -60,80 +63,165 @@
         <!-- ✅ 프로필 이미지 추가 -->
         <img src="images/profile.jpg" alt="Profile" class="profile-img">
 
-        <h1>Minimal</h1>
-        <p>A Theme for GitHub Pages</p>
-        <p class="view"><a href="http://github.com/orderedlist/minimal">View the Project on GitHub <small>orderedlist/minimal</small></a></p>
-        <ul>
+        <h1>SangA Kim</h1>
+        <p>Cloud Engineer</p>
+        <p class="view"><a href="https://github.com/tkddk0108">View the Project on GitHub</a></p>
+        <!-- <ul class="download-links">
           <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
-        </ul>
+        </ul> -->
 
         <!-- ✅ 세로 네비게이션 바 추가 -->
         <nav class="vertical-nav">
           <ul>
-            <li><a href="#home" class="active">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#experience">EXPERIENCE</a></li>
-            <li><a href="#career">CAREER</a></li>
-            <li><a href="#education">EDUCATION</a></li>
-            <li><a href="#blog">BLOG</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#skillset">SkillSet</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#language">Language</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#cloud-native">Cloud Native Project</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
 
       <section>
-        <h1 id="introduction">GitHub Flavored Markdown</h1>
-
-        <p><em>View the <a href="http://github.github.com/github-flavored-markdown/sample_content.html">source of this content</a>.</em></p>
-
-        <p>Let's get the whole "linebreak" thing out of the way...</p>
-        <p>Roses are red<br>
-        Violets are blue</p>
-
-        <p>The next paragraph has the same phrases, but now they are separated by two spaces and a newline character:</p>
-
-        <p>Roses are red<br><br>
-        Violets are blue</p>
-
-        <p>Oh, and one thing I cannot stand is the mangling of words with multiple underscores in them like perform_complicated_task or do_this_and_do_that_and_another_thing.</p>
-
-        <h2>A bit of the GitHub spice</h2>
+        <hr class="section-divider">
+        <div class="introduction-section">
+          <h1 id="introduction">Introduction</h1>
+          <blockquote>
+            <p>I will become an engineer who solves complex problems through collaboration and creative thinking, and grow into a valuable member of a diverse and innovative team by continuously taking on new challenges.</p>
+            <p>The next paragraph has the same phrases, but now they are separated by two spaces and a newline character:</p>
+          </blockquote>
+          <p>My email addy is <a href="https://github.com/tkddk0108">tom@github.com</a>.</p>
+        </div>
+        <hr class="section-divider">
+        <h1 id="skillset">SkillSet</h1>
 
         <p>In addition to the changes in the previous section, certain references are auto-linked:</p>
 
         <ul>
-          <li>SHA: be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2</li>
-          <li>User@SHA ref: <a href="https://github.com/mojombo/product/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2" class="commit-link">mojombo@<tt>be6a8cc</tt></a></li>
-          <li>User/Project@SHA: <a href="https://github.com/mojombo/god/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2" class="commit-link">mojombo/god@<tt>be6a8cc</tt></a></li>
-          <li>#Num: <a href="https://github.com/github/product/issues/1" class="issue-link" title="Baseline: What is up in the air right now?">#1</a></li>
-          <li>User/#Num: mojombo#1</li>
-          <li>User/Project#Num: <a href="https://github.com/mojombo/god/issues/1" class="issue-link" title="The server is not available (or you do not have permissions to access it)">mojombo/god#1</a></li>
+          <li><strong>Languages:</strong> Python, JavaScript</li>
+          <li><strong>Frameworks:</strong> FastAPI, React Native</li>
+          <li><strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes, Terraform, Ansible</li>
+          <li><strong>Tools:</strong> Git, Prometheus, Grafana, Figma, MySQL</li>
         </ul>
-
-        <p>These are dangerous goodies though, and we need to make sure email addresses don't get mangled:</p>
-
-        <p>My email addy is <a href="mailto:tom@github.com">tom@github.com</a>.</p>
-
-        <h2 id="skillset">A bit of the GitHub spice</h2>
-
-        <p>In first grade I learned that 5 &gt; 3 and 2 &lt; 7. Maybe some arrows. 1 -&gt; 2 -&gt; 3. 9 &lt;- 8 &lt;- 7.</p>
-
-        <p>Triangles man! a^2 + b^2 = c^2</p>
-
-        <h2 id="projects">We all like making lists</h2>
-
-        <p>The above header should be an H2 tag. Now, for a list of fruits:</p>
+        <hr class="section-divider">
+        <h1 id="education">Education</h1>
 
         <ul>
-          <li>Red Apples</li>
-          <li>Purple Grapes</li>
-          <li>Green Kiwifruits</li>
+          <li>
+            <strong>03/2020 - 08/2025 (expected)</strong><br>
+            Bachelor’s degree in Software Engineering at Dankook University<br>
+            GPA: 3.74 / 4.5
+          </li>
+          <li>
+            <strong>03/2023 - 06/2023</strong><br>
+            Exchange Student at VSB – Technical University of Ostrava, Czech Republic<br>
+            Faculty of Electrical Engineering & Computer Science
+          </li>
+          <li>
+            <strong>03/2017 - 02/2020</strong><br>
+            Graduated from YeongSaeng High School, KR
+          </li>
+        </ul>
+        <hr class="section-divider">
+        <h1 id="language">Language Skills</h1>
+
+        <ul>
+          <li>English: TOEIC Speaking IH (Intermediate High)</li>
+        </ul>
+        <hr class="section-divider">
+        <h1 id="certification">Certification</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Certificate</th>
+              <th>Organization</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Solutions Architect Associate</td>
+              <td>AWS</td>
+              <td>2024.12.29</td>
+            </tr>
+            <tr>
+              <td>SQL Developer Certificate (SQLD)</td>
+              <td>Korea Data Agency</td>
+              <td>2025.03.16</td>
+            </tr>
+            <tr>
+              <td>CSTS (Certified Software Test Specialist)</td>
+              <td>TTA</td>
+              <td>2024.03.16</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr class="section-divider">
+        <h1 id="experience">Experience</h1>
+        <ul>
+          <li>
+            <strong>01/2024 - 06/2024</strong><br>
+            <strong>Intern</strong><br>
+            <em>Telecommunications Technology Association, TTA</em>
+            <ul>
+              <li>Worked on QA testing for 5 software projects, including a health app, heating control system, parking management, OCR SDK, and chart library.</li>
+            </ul>
+          </li>
         </ul>
 
+        <hr class="section-divider">
+        <h1 id="cloud-native">Cloud Native Project</h1>
+        <h2>Aira-1: Cloud Performance Optimization</h2>
+        <div class="project-item">
+          <img src="images/aira1.jpg" alt="Aira-1">
+          <p>Optimized an OpenAI chatbot service using EC2, ALB, Auto Scaling, Prometheus, and Grafana with load testing via Locust.</p>
+          <p class="skills">[AWS, EC2, ALB, Prometheus, FastAPI, OpenAI API]</p>
+        </div>
+
+        <h2>Aira-2: Cloud Native Architecture</h2>
+        <img src="images/aira2.jpg" alt="Aira-2">
+        <div class="project-item">
+        <p>Designed and implemented a cloud-native architecture for a chatbot service using AWS services, including EC2, ALB, Auto Scaling, and S3.</p>
+        <p class="skills">[AWS, EC2, ALB, S3, FastAPI, OpenAI API]</p>
+        </div>
+
+        <h2>Aira-3: Cloud Native Architecture</h2>
+        <div class="project-item">
+        <img src="images/aira3.jpg" alt="Aira-3">
+        <p>Designed and implemented a cloud-native architecture for a chatbot service using AWS services, including EC2, ALB, Auto Scaling, and S3.</p>
+        <p class="skills">[AWS, EC2, ALB, S3, FastAPI, OpenAI API]</p>
+        </div>
+
+        <hr class="section-divider">
+        <h1 id="projects">Projects</h1>
+        <h2>Petogether</h2>
+        <div class="project-item">
+          <img src="images/petogether.jpg" alt="Petogether">
+          <p>Developed a pet diary app with multi-pet management, handling both frontend and backend development.</p>
+          <p class="skills">[React Native, FastAPI, MySQL, AWS]</p>
+        </div>
+
+        <h2>쫑알쫑알</h2>
+        <div class="project-item">
+          <img src="images/zzong.jpg" alt="쫑알쫑알">
+          <p>Developed an AI-based storytelling app where children create fairy tales through chatbot conversations, responsible for frontend and cloud infrastructure.</p>
+          <p class="skills">[React Native, OpenAI API, ElevenLabs, Cloud Infra]</p>
+        </div>
+
+        <hr class="section-divider">
+        <h1 id="contact">Contact</h1>
+        <p>Email: <a href="cometokr1@naver.com">cometokr1@naver.com</a></p>
+        <p>Phone: +82-10-1234-5678</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sangakim">SangA Kim</a></p>
+        <p>GitHub: <a href="https://github.com/tkddk0108">tkddk0108</a></p>
+
+<!-- 
         <p>Let's get crazy:</p>
 
         <ol>
@@ -147,112 +235,10 @@
             sit amet velit.</p>
           </li>
           <li><p>Suspendisse id sem consectetuer libero luctus adipiscing.</p></li>
-        </ol>
+        </ol> -->
 
-        <p>What about some code <strong>in</strong> a list? That's insane, right?</p>
 
-        <ol>
-          <li>
-            <p>In Ruby you can map like this:</p>
-
-            <pre><code>['a', 'b'].map { |x| x.uppercase }</code></pre>
-          </li>
-          <li>
-            <p>In Rails, you can do a shortcut:</p>
-
-            <pre><code>['a', 'b'].map(&amp;:uppercase)</code></pre>
-          </li>
-        </ol>
-
-        <p>Some people seem to like definition lists</p>
-
-        <dl>
-          <dt>Lower cost</dt>
-          <dd>The new version of this product costs significantly less than the previous one!</dd>
-          <dt>Easier to use</dt>
-          <dd>We've changed the product so that it's much easier to use!</dd>
-        </dl>
-
-        <h2 id="contact">Table for two</h2>
-
-        <p>Maybe you want to print <code>robot</code> to the console 1000 times. Why not?</p>
-
-        <pre><code>def robot_invasion
-  puts("robot " * 1000)
-end
-</code></pre>
-
-        <p>You see, that was formatted as code because it's been indented by four spaces.</p>
-
-        <p>How about we throw some angle braces and ampersands in there?</p>
-
-        <pre><code>&lt;div class="footer"&gt;
-    &amp;copy; 2004 Foo Corporation
-&lt;/div&gt;
-</code></pre>
-
-        <h2>Set in stone</h2>
-
-        <p>Preformatted blocks are useful for ASCII art:</p>
-
-        <pre>             ,-.
-    ,     ,-.   ,-.
-   / \   (   )-(   )
-   \ |  ,.&gt;-(   )-&lt;
-    \|,' (   )-(   )
-     Y ___`-'   `-'
-     |/__/   `-'
-     |
-     |
-     |    -hrr-
-  ___|_____________
-</pre>
-
-        <h2>Playing the blame game</h2>
-
-        <p>If you need to blame someone, the best way to do so is by quoting them:</p>
-
-        <blockquote>
-        <p>I, at any rate, am convinced that He does not throw dice.</p>
-        </blockquote>
-
-        <p>Or perhaps someone a little less eloquent:</p>
-
-        <blockquote>
-        <p>I wish you'd have given me this written question ahead of time so I<br>
-        could plan for it... I'm sure something will pop into my head here in<br>
-        the midst of this press conference, with all the pressure of trying to<br>
-        come up with answer, but it hadn't yet...</p>
-
-        <p>I don't want to sound like<br>
-        I have made no mistakes. I'm confident I have. I just haven't - you<br>
-        just put me under the spot here, and maybe I'm not as quick on my feet<br>
-        as I should be in coming up with one.</p>
-        </blockquote>
-
-        <h2>Table for two</h2>
-
-        <table>
-          <tbody>
-        <tr>
-            <th>ID</th>
-        <th>Name</th>
-        <th>Rank</th>
-          </tr>
-          <tr>
-            <td>1</td>
-        <td>Tom Preston-Werner</td>
-        <td>Awesome</td>
-          </tr>
-          <tr>
-            <td>2</td>
-        <td>Albert Einstein</td>
-        <td>Nearly as awesome</td>
-          </tr>
-        </tbody>
-        </table>
-
-        <h2>Crazy linking action</h2>
+        <!-- <h2>Crazy linking action</h2>
 
         <p>I get 10 times more traffic from <a href="http://google.com/" title="Google">Google</a> than from<br>
         <a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
@@ -260,8 +246,31 @@ end
       <footer>
         <p>This project is maintained by <a href="http://github.com/orderedlist">Steve Smith</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+      </footer> -->
     </div>
     <script src="javascripts/scale.fix.js"></script>
+    <script>
+      // 모든 세로 네비게이션 링크를 가져옵니다.
+      const navLinks = document.querySelectorAll('.vertical-nav ul li a');
+  
+      // 첫 번째 HOME 링크를 기본으로 active 상태로 만듭니다.
+      if (navLinks.length > 0) {
+        navLinks[0].classList.add('active');
+      }
+  
+      // 각 링크에 클릭 이벤트를 추가합니다.
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+          // 클릭된 링크의 기본 동작(페이지 이동)을 막고 싶지 않다면 아래 줄은 주석 처리하거나 삭제하세요.
+          // event.preventDefault(); 
+  
+          // 먼저 모든 링크에서 'active' 클래스를 제거합니다.
+          navLinks.forEach(navLink => navLink.classList.remove('active'));
+  
+          // 방금 클릭한 링크에만 'active' 클래스를 추가합니다.
+          this.classList.add('active');
+        });
+      });
+    </script>
   </body>
-</html>
+  </html>
