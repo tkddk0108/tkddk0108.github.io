@@ -54,9 +54,45 @@ a:hover small {
   color:#777;
 }
 
+/*
+기존 wrapper 정의 삭제/주석 처리
+.width: 1300px; // 충분히 넓게!
+margin: 0 auto;
+*/
+
+/* 1) wrapper를 flex 컨테이너로 변경 */
 .wrapper {
-  width: 1300px; /* 충분히 넓게! */
+  max-width: 860px;       /* 원래 860px 이었다면 그대로, 더 넓게 하고 싶으면 숫자 조정 */
   margin: 0 auto;
+  display: flex;
+  align-items: flex-start; /* header와 section이 상단 기준으로 정렬 */
+  gap: 30px;               /* header와 section 사이 30px 공백 */
+}
+
+/* 2) header - 고정(sticky) + flex 아이템 */
+header {
+  flex: 0 0 250px;       /* 폭을 270px로 고정 */
+  position: sticky;      
+  top: 50px;             /* 스크롤 시 상단에서 50px 띄워서 고정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 3) section - flex 아이템으로 남은 공간 채우기 */
+section {
+  flex: 1;               /* wrapper 내에서 남은 공간 전부 사용 */
+  position: static;      /* sticky/float 삭제 */
+  margin: 0;             /* 기존 margin-left 제거 */
+  padding-bottom: 50px;  /* 원래 있던 패딩만 가져옴 */
+}
+
+/* 4) footer (원한다면 똑같이 sticky 처리) */
+footer {
+  flex: 0 0 270px;
+  position: sticky;
+  bottom: 50px;
+  /* float, left 계산 등 모두 제거 */
 }
 
 blockquote {
@@ -101,17 +137,6 @@ th {
 
 img {
   max-width:100%;
-}
-
-header {
-  width:270px;
-  float:left;
-  position:fixed;
-  -webkit-font-smoothing:subpixel-antialiased;
-  /* ✅ 아래 3줄 코드 추가 */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* Download Links Section */
@@ -174,13 +199,6 @@ header .download-links a strong {
   color:#222;
 }
 
-section {
-  width: 700px;
-  margin-left: 400px; /* header(270px) + 여유(30px) */
-  padding-bottom: 50px;
-  /* float: right;  << 삭제! */
-}
-
 small {
   font-size:11px;
 }
@@ -190,14 +208,6 @@ hr {
   background:#e5e5e5;
   height:1px;
   margin:0 0 20px;
-}
-
-footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
-  -webkit-font-smoothing:subpixel-antialiased;
 }
 
 @media print, screen and (max-width: 960px) {
