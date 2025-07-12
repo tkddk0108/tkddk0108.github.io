@@ -75,6 +75,16 @@
         text-align: center;
         margin-bottom: -10px;
       }
+      .social-icon {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        margin: 0 4px;
+        transition: filter 0.2s;
+      }
+      .social-icon:hover {
+        filter: brightness(0.8);
+      }
     </style>
   </head>
   <body>
@@ -84,8 +94,23 @@
         <img src="images/profile.jpg" alt="Profile" class="profile-img">
 
         <h1>SangA Kim</h1>
-        <p style="text-align: center;">Cloud Engineer<br>
+        <p style="text-align: center;">Cloud Engineer<br>   
         <a href="https://github.com/tkddk0108" title="GitHub">GitHub</a>  | cometokr1@naver.com</p>
+
+        <!-- <p style="text-align: center;">Cloud Engineer<br>   
+        <a href="https://github.com/tkddk0108" title="GitHub">GitHub</a>  | cometokr1@naver.com</p> 
+      <p>
+        <a href="https://github.com/tkddk0108" title="GitHub" target="_blank">
+          <img src="images/github.png" alt="GitHub" class="social-icon"> 
+        </a>
+        <a href="https://drive.google.com/drive/folders/1l9yyuKy89xDZf_ZuPju2pkuwYUs2b1b2?usp=drive_link8" title="Google Drive" target="_blank">
+          <img src="images/gdrive.png" alt="Google Drive" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/sanga-kim-a59498328/" title="LinkedIn" target="_blank">
+          <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+        </a>
+      </p> -->
+
 
         <!-- <ul class="download-links">
           <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download <strong>ZIP File</strong></a></li>
@@ -93,7 +118,6 @@
           <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
         </ul> -->
 
-        <!-- ✅ 세로 네비게이션 바 추가 -->
         <nav class="vertical-nav">
           <ul>
             <li><a href="#introduction">Introduction</a></li>
@@ -136,7 +160,7 @@
           <li>
             <strong>2020년 3월 – 2025년 8월 (졸업예정)</strong><br>
             단국대학교 소프트웨어학과 학사과정 재학 중<br>
-            학점: 3.74 / 4.5
+            학점: 3.76 / 4.5
           </li>
           <li>
             <strong>2023년 3월 – 2023년 6월</strong><br>
@@ -293,11 +317,13 @@
         </p>
       </div>
         <p>
-          EC2 기반 OpenAI 챗봇 서비스를 Auto Scaling, ALB를 통해 무중단 운영하도록 구성하고,<br>
-          Prometheus와 Grafana로 리소스를 실시간 모니터링하여 이상 징후에 선제 대응.<br>
-          Locust를 활용한 부하 테스트로 HPA(Pod Auto Scaling) 기능 검증.<br>
-          또한 Terraform과 Ansible로 EKS 인프라를 코드로 관리하고, ArgoCD를 통한 GitOps CD 파이프라인 구축.<br>
-          SQS 기반 메시지 큐 처리, CronJob 백업 자동화 등 실사용 기준의 운영 자동화 실현.
+          EC2 기반 OpenAI 챗봇 서비스를 Auto Scaling과 ALB를 통해 무중단으로 운영 가능한 구조로 구성하였습니다.
+          또한, SQS 기반 메시지 큐 처리와 CronJob을 활용한 자동 백업 기능을 구현하여 운영의 효율성과 안정성을 높였습니다.
+        </p>
+        <p>
+          Prometheus와 Grafana를 활용해 리소스를 실시간으로 모니터링하고, 이상 징후를 빠르게 감지하여 대응 가능하도록 하였으며,
+          Locust를 활용해 다양한 시나리오에 대한 부하 테스트를 수행하고, HPA(Pod Auto Scaling) 기능의 안정성을 검증하였습니다. <br>
+          Terraform과 Ansible을 통해 EKS 인프라를 코드로 관리하며, ArgoCD 기반의 GitOps CD 파이프라인을 구축하였습니다. <br>
         </p>
         <p class="skills"><strong>What I Used?</strong> [ArgoCD, Terraform, Ansible, SQS, CronJob]</p>
 
@@ -361,6 +387,7 @@
         <h1 id="contact">Contact</h1>
         <p>Email: <a href="mailto:cometokr1@naver.com">cometokr1@naver.com</a></p>
         <p>Phone: +82-10-7732-1085</p>
+        <p>Google Drive: <a href="https://drive.google.com/drive/folders/1l9yyuKy89xDZf_ZuPju2pkuwYUs2b1b2?usp=drive_link8">Google Drive</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/sanga-kim-a59498328/">SangA Kim</a></p>
         <p>GitHub: <a href="https://github.com/tkddk0108">tkddk0108</a></p>
 
