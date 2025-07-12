@@ -92,6 +92,18 @@
         font-size: 16px;
         line-height: 1.8;
       }
+      blockquote {
+        border-left: 4px solid #eee;
+        margin: 0 0 16px 0;
+        padding: 12px 16px;
+        background: #fafbfc;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.8;
+        /* 아래 두 줄이 핵심! */
+        text-indent: 0;
+        /* width: 100%;  // 필요시 추가 */
+      }
     </style>
   </head>
   <body>
@@ -347,15 +359,14 @@
 
       <div class="project-description" style="padding: 20px; border-radius: 8px; font-size: 16px; line-height: 1.8;">
         <blockquote>
-        <p>
-          1차 프로젝트를 기반으로 <strong>유저 인증</strong>, <strong>데이터 수집 기능</strong>을 추가하고, 클라우드 아키텍처를 <strong>ECS Fargate 기반 서버리스 구조</strong>로 전면 개편했습니다.  
-          <strong>GitHub Actions</strong>를 통한 <strong>CI/CD 파이프라인</strong>과 <strong>ESLint</strong>, <strong>flake8</strong>으로 <strong>코드 품질 검사</strong>를 자동화하였고,  
-          <strong>Prometheus</strong>, <strong>Grafana</strong>, <strong>CloudWatch</strong>, <strong>AlertManager</strong>를 활용해 <strong>서비스 모니터링 및 장애 알림 시스템</strong>을 구축했습니다.
-        </p>
-        <p>
-          <strong>FIFO Queue 및 DLQ</strong> 기반의 <strong>트랜잭션 무결성 보장 전략</strong>을 도입하고, <strong>Locust</strong>로 다양한 케이스의 <strong>부하 테스트</strong>를 수행해 <strong>1400명 이상 동시접속</strong>을 안정적으로 검증했습니다.  
-          <strong>ECS + ALB</strong> 조합과 <strong>VPC 엔드포인트</strong>를 통해 <strong>인프라 비용 절감</strong> 및 <strong>운영 자동화</strong>로 <strong>유지보수 오버헤드</strong>를 크게 줄였습니다.
-        </p>
+          <p>
+            <strong>EC2 기반 OpenAI 챗봇 서비스</strong>를 <strong>Auto Scaling</strong>, <strong>ALB</strong>를 통해 무중단 운영하도록 구성하고,<br>
+            <strong>Prometheus</strong>와 <strong>Grafana</strong>로 리소스를 실시간 모니터링하여 이상 징후에 선제 대응하였습니다.<br>
+            <strong>Locust</strong>를 활용한 부하 테스트로 <strong>HPA(Pod Auto Scaling)</strong> 기능을 검증하였습니다.<br>
+            또한 <strong>Terraform</strong>과 <strong>Ansible</strong>로 <strong>EKS 인프라</strong>를 코드로 관리하고,  
+            <strong>ArgoCD</strong>를 통한 <strong>GitOps CD 파이프라인</strong>을 구축하였습니다.<br>
+            <strong>SQS 기반 메시지 큐 처리</strong>, <strong>CronJob 백업 자동화</strong> 등 실사용 기준의 <strong>운영 자동화</strong>를 실현하였습니다.
+          </p>
         </blockquote>
       </div>
         <p class="skills"><strong>What I Used?</strong> [ArgoCD, Terraform, Ansible, SQS, CronJob]</p>
