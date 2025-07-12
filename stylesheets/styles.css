@@ -284,3 +284,18 @@ hr {
     color:#444;
   }
 }
+
+.image-gallery {
+  display: flex;
+  gap: 8px;               /* 이미지 사이 간격 */
+  overflow-x: auto;       /* 화면 좁을 땐 좌우 스크롤 */
+  margin-bottom: 16px;
+}
+
+.image-gallery img {
+  flex: 1 1 0;
+  max-width: calc(25% - 6px); /* 네 장이 균등하게 들어가도록 */
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
