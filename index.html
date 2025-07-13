@@ -273,9 +273,9 @@
               아래와 같은 프로젝트를 통해 클라우드 성능 최적화, 장애 자동 감지 및 운영 자동화 기술을 실습했습니다:
             </p>
             <ul>
-              <li><strong>Aira-1:</strong> Prometheus와 Grafana를 활용한 시스템 성능 모니터링 및 병목 구간 개선</li>
-              <li><strong>Aira-2:</strong> 트랜잭션 무결성 보장과 장애 감지를 위한 알림 시스템 구축</li>
-              <li><strong>Aira-3:</strong> EKS 기반 IaC 자동화, GitOps CD 파이프라인, Auto Scaling 운영환경 구성</li>
+              <li><strong>Aira-1:</strong> 클라우드 퍼포먼스 최적화</li>
+              <li><strong>Aira-2:</strong> 자동 오류 감지와 트랜잭션 무결성</li>
+              <li><strong>Aira-3:</strong> IaaS 클라우드 운영 자동화</li>
             </ul>
           </li>
           <li>
@@ -289,7 +289,7 @@
 
         <hr class="section-divider">
         <h1 id="cloud-native">Cloud Native Project</h1>
-        <h2>☁️ 클라우드 퍼포먼스 최적화: Aira-1</h2>
+        <h2>☁️ Aira-1: 클라우드 퍼포먼스 최적화</h2>
         <p style="font-size: 14px; color: #555; margin-top: -10px; margin-bottom: 8px;"><strong>24.12.06 – 25.01.15</strong></p>
         <div class="project-item">
           <img src="images/aira1.jpg" alt="Aira-1">
@@ -301,18 +301,21 @@
       <div class="project-description" style="padding: 20px; border-radius: 8px; font-size: 16px; line-height: 1.8;">
         <blockquote>
           <p>
-            <strong>OpenAI 기반 챗봇 서비스 Aira</strong>를 개발하고,<br>
-            <strong>EC2 오토스케일링</strong> 및 <strong>ALB</strong>를 활용하여<br>
-            <strong>고가용성</strong>과 <strong>확장성</strong>을 갖춘 <strong>클라우드 인프라</strong>를 구축했습니다.<br>
-            <strong>Prometheus</strong>와 <strong>Grafana</strong>를 이용해 <strong>실시간 모니터링 시스템</strong>을 구성하고,<br>
-            <strong>Locust</strong>로 <strong>부하 테스트</strong>를 수행하여 <strong>성능 병목</strong>을 분석하고 <strong>최적화</strong> 방안을 적용했습니다.
+            OpenAI 기반 챗봇 서비스 <strong>Aira</strong>의 개발에서 <strong>프론트엔드 구현</strong>을 담당하였으며,  
+            <strong>Auto Scaling Group</strong>을 구성하고 <strong>로드 밸런서(ALB)</strong>를 도입하여  
+            <strong>고가용성</strong>과 <strong>확장성</strong>을 갖춘 클라우드 인프라를 구축하였습니다.
+          </p>
+          <p>
+            또한, <strong>Prometheus</strong>와 <strong>Grafana</strong>를 활용하여  
+            <strong>실시간 모니터링 시스템</strong>을 구성하고, <strong>Locust</strong>를 이용한  
+            <strong>부하 테스트</strong>에도 협력하였습니다.
           </p>
           </blockquote>
         </div>
           <p class="skills"><strong>What I Used?</strong> [AWS, EC2, ALB, Prometheus, ,Grafana, JavaScript, OpenAI API]</p>
           <hr class="section-divider">
 
-        <h2>☁️ 자동 오류 감지와 트랜잭션 무결성: Aira-2 </h2>
+        <h2>☁️ Aira-2: 자동 오류 감지와 트랜잭션 무결성</h2>
         <p style="font-size: 14px; color: #555; margin-top: -10px; margin-bottom: 8px;"><strong>25.01.16 – 25.02.19</strong></p>
 
         <div class="project-item">  
@@ -325,26 +328,33 @@
       <div class="project-description" style="padding: 20px; border-radius: 8px; font-size: 16px; line-height: 1.8;">
         <blockquote>
           <p>
-            1차 프로젝트를 기반으로 <strong>유저 인증</strong>, <strong>데이터 수집 기능</strong>을 추가하고,<br>
-            클라우드 아키텍처를 <strong>ECS Fargate</strong> 기반의 <strong>서버리스 구조</strong>로 전면 개편했습니다.<br>
-            <strong>GitHub Actions</strong>를 통한 <strong>CI/CD 파이프라인</strong>과 <strong>ESLint</strong>, <strong>flake8</strong>으로 <strong>코드 품질 검사</strong>를 자동화하였고,<br>
-            <strong>Prometheus</strong>, <strong>Grafana</strong>, <strong>CloudWatch</strong>, <strong>AlertManager</strong>를 활용해<br>
-            <strong>서비스 전반에 대한 모니터링 및 장애 알림 시스템</strong>을 구축했습니다.
+            1차 프로젝트를 기반으로 <strong>유저 인증</strong>과 <strong>데이터 수집</strong> 기능을 추가하고,  
+            클라우드 아키텍처를 <strong>ECS Fargate 기반 서버리스 구조</strong>로 전면 개편하였습니다.
           </p>
+          
           <p>
-            <strong>FIFO Queue</strong> 및 <strong>DLQ</strong> 기반의 <strong>트랜잭션 무결성 보장 전략</strong>을 도입하고,<br>
-            <strong>Locust</strong>로 다양한 케이스의 <strong>부하 테스트</strong>를 수행해 <strong>1,400명 이상</strong>까지<br>
-            안정적인 <strong>동시접속 처리</strong> 능력을 검증했습니다.<br>
-            <strong>ECS + ALB</strong> 조합과 <strong>VPC 엔드포인트</strong>를 통해 <strong>인프라 비용 절감</strong> 및<br>
-            <strong>운영 자동화</strong>로 <strong>유지보수 오버헤드</strong>를 크게 줄였습니다.
-          </p>       
+            <strong>GitHub Actions</strong>를 활용한 <strong>CI/CD 파이프라인</strong>과  
+            <strong>ESLint</strong>, <strong>flake8</strong>을 통한 <strong>코드 품질 검사 자동화</strong>를 담당하였습니다.
+          </p>
+          
+          <p>
+            <strong>FIFO Queue</strong> 및 <strong>DLQ</strong>를 구성하여  
+            프론트엔드와 백엔드 간 <strong>트랜잭션 무결성</strong>을 보장하고,  
+            요청과 응답을 <strong>비동기 방식</strong>으로 안정적으로 처리할 수 있도록 설계하였습니다.
+          </p>
+          
+          <p>
+            <strong>Route 53</strong>을 통해 <strong>도메인 네임 시스템(DNS)</strong>을 관리하고,  
+            <strong>Locust</strong>로 다양한 테스트 케이스 기반의 <strong>부하 테스트</strong>를 수행하여  
+            <strong>1,400명 이상</strong>의 <strong>동시 접속</strong> 환경에서도 안정적인 서비스를 검증하였습니다.
+          </p>  
         </blockquote>
       </div>
           <p class="skills"><strong>What I Used?</strong>  [ECS Fargate, ALB, ECR, Route 53, CloudFront, S3, CloudWatch, Locust, SQS, FIFO Queue, GitHub Actions]</p>
 
           <hr class="section-divider">
 
-        <h2>☁️ IaaS 클라우드 운영 자동화: Aira-3</h2>
+        <h2>☁️ Aira-3: IaaS 클라우드 운영 자동화</h2>
         <p style="font-size: 14px; color: #555; margin-top: -10px; margin-bottom: 8px;"><strong>25.02.20 – 25.03.24</strong></p>
         <div class="project-item">
           <img src="images/aira3-1.jpg" alt="Aira-3-1">
@@ -360,12 +370,29 @@
       <div class="project-description" style="padding: 20px; border-radius: 8px; font-size: 16px; line-height: 1.8;">
         <blockquote>
           <p>
-            <strong>EC2 기반 OpenAI 챗봇 서비스</strong>를 <strong>Auto Scaling</strong>, <strong>ALB</strong>를 통해 무중단 운영하도록 구성하고,<br>
-            <strong>Prometheus</strong>와 <strong>Grafana</strong>로 리소스를 실시간 모니터링하여 이상 징후에 선제 대응하였습니다.<br>
-            <strong>Locust</strong>를 활용한 부하 테스트로 <strong>HPA(Pod Auto Scaling)</strong> 기능을 검증하였습니다.<br>
-            또한 <strong>Terraform</strong>과 <strong>Ansible</strong>로 <strong>EKS 인프라</strong>를 코드로 관리하고,  
-            <strong>ArgoCD</strong>를 통한 <strong>GitOps CD 파이프라인</strong>을 구축하였습니다.<br>
-            <strong>SQS 기반 메시지 큐 처리</strong>, <strong>CronJob 백업 자동화</strong> 등 실사용 기준의 <strong>운영 자동화</strong>를 실현하였습니다.
+            2차 프로젝트를 발전시켜 <strong>EKS 기반 클라우드 인프라</strong>를 구축하였습니다.
+          </p>
+          
+          <p>
+            <strong>EKS 클러스터</strong>와 <strong>워커 노드</strong>는 <strong>Terraform</strong>을 통해 인프라를 코드로 관리하고 자동화하였으며,  
+            <strong>Ansible</strong>을 활용해 <strong>네임스페이스</strong> 및 <strong>어플리케이션 배포 설정 파일</strong>을 코드화하여  
+            <strong>Kubernetes 리소스 자동화 배포</strong>를 구현하였습니다.
+          </p>
+          
+          <p>
+            <strong>ArgoCD</strong>를 이용해 <strong>GitOps 방식</strong>으로  
+            <strong>Application 네임스페이스</strong>에 <strong>자동 배포 파이프라인</strong>을 구성하였습니다.
+          </p>
+          
+          <p>
+            <strong>Prometheus</strong>와 <strong>Grafana</strong>를 이용해 <strong>리소스 실시간 모니터링</strong> 시스템을 구축하였고,  
+            <strong>Locust</strong> 기반 <strong>부하 테스트</strong>를 통해  
+            <strong>HPA(Pod Auto Scaling)</strong> 기능의 유효성을 검증하였습니다.
+          </p>
+          
+          <p>
+            또한 <strong>CronJob</strong>을 통한 <strong>주기적 백업</strong> 및 <strong>복구 테스트</strong>를 수행하여  
+            <strong>데이터 신뢰성</strong>을 확보하였습니다.
           </p>
         </blockquote>
       </div>
@@ -399,9 +426,14 @@
           <blockquote>
             <p>
               가족 구성원 모두가 <strong>강아지의 추억, 건강, 산책, 접종</strong>을 함께 기록하고 관리할 수 있는  
-              <strong>올인원 모바일 다이어리 앱</strong>입니다.<br>
-              <strong>React Native(Expo)</strong>로 <strong>모바일 UI</strong>를 구현하고,  
-              <strong>FastAPI</strong> 기반 백엔드를 <strong>MySQL 데이터베이스</strong>와 연동해 개발했습니다.
+              <strong>올인원 모바일 다이어리 앱</strong>입니다.
+            </p>
+            
+            <p>
+              <strong>React Native (Expo)</strong>를 활용하여 <strong>모바일 UI</strong>를 구현하고,  
+              <strong>FastAPI</strong> 기반 백엔드를 <strong>MySQL 데이터베이스</strong>와 연동하여 전체 서비스를 설계·개발하였습니다.  
+              프론트엔드와 백엔드 모두에 적극 참여하여 <strong>전체 개발 흐름을 주도</strong>하였으며,  
+              <strong>팀장으로서 기획, 일정 조율, 코드 리뷰, 배포 관리 등 프로젝트 전반을 총괄</strong>하였습니다.
             </p>
           </blockquote>
         </div>
@@ -419,6 +451,7 @@
             <img src="images/Zzong3.png" alt="쫑알3">
             <img src="images/Zzong4.png" alt="쫑알4">
           </div>
+          <img src="images/Zzong5.png" alt="쫑알5">
         <p>
           <a href="https://github.com/JJongalJJongal" title="GitHub">GitHub</a> 코드 보기 | 
           <a href="http://search.yahoo.com/" title="Google Drive">Google Drive</a> 발표 자료 보기
@@ -427,12 +460,31 @@
         <div class="project-description" style="padding: 20px; border-radius: 8px; font-size: 16px; line-height: 1.8;">
           <blockquote>
             <p>
-              어린이가 <strong>AI 챗봇</strong>과 대화를 나누며 직접 동화를 만들어보는 <strong>스토리텔링 앱</strong>입니다.<br>
-              <strong>React Native</strong>로 <strong>모바일 UI</strong>를,  
-              <strong>ElevenLabs 음성 합성 API</strong>로 <strong>내레이션</strong>을 구현했고,<br>
-              <strong>FastAPI / OpenAI API</strong> 기반 백엔드를  
-              <strong>AWS ECS Fargate</strong>에 배포하여 <strong>안정성과 확장성</strong>을 확보했습니다.<br>
-              * 현재 <strong>한이음 공모전</strong>에 참여하여 앱을 개발 중입니다.
+              어린이가 <strong>AI 챗봇과 대화를 나누며 직접 동화의 줄거리와 대사</strong>를 만들어 나가고,  
+              이를 바탕으로 <strong>스크립트 생성</strong> 및 <strong>이미지 생성</strong>까지 자동화하여  
+              <strong>나만의 동화책을 만드는 앱</strong>입니다.
+            </p>
+            
+            <p>
+              기존 동화 앱과 달리 <strong>주제 선정, 이야기 구성, 표현 방식</strong> 등  
+              <strong>아이의 창의력</strong>을 자유롭게 담아낼 수 있다는 점이 핵심 특징입니다.  
+              또한 동화 낭독 음성은 <strong>클로닝 기술</strong>을 활용하여  
+              <strong>부모나 아이의 목소리로 읽어주는 방식</strong>으로 더욱 친근하게 구성했습니다.
+            </p>
+            
+            <p>
+              이 프로젝트에서 저는 <strong>클라우드 인프라와 프론트엔드</strong>를 담당하였으며,  
+              <strong>AWS 기반 배포 환경</strong>을 직접 구성하고,  
+              <strong>S3, S3 Glacier, RDS</strong>를 활용하여 사용자 데이터 및 개인정보를 안전하게 저장하도록 설계하였습니다.
+            </p>
+            
+            <p>
+              프론트엔드는 <strong>JavaScript</strong>를 중심으로 개발하였으며,  
+              <strong>FastAPI 백엔드 및 AI 인스턴스</strong>들과의 통신을 처리하는 핸들러를 구현하여  
+              사용자 인터랙션 흐름을 안정적으로 연결하였습니다.
+            </p>
+            <p>
+             * 현재 <strong>한이음 공모전</strong>에 참여하여 앱을 개발 중입니다.
             </p>
           </blockquote>
         </div>
