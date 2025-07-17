@@ -122,21 +122,21 @@
 
         <h1>SangA Kim</h1>
         <p style="text-align: center;">Cloud / Infra<br>   
-        <a href="https://github.com/tkddk0108" title="GitHub">GitHub</a>  | cometokr1@naver.com</p>
+        <a href="mailto:cometokr1@naver.com" title="GitHub">email</a>  | cometokr1@naver.com</p>
 
-        <!-- <p style="text-align: center;">Cloud Engineer<br>   
-        <a href="https://github.com/tkddk0108" title="GitHub">GitHub</a>  | cometokr1@naver.com</p> 
-      <p>
-        <a href="https://github.com/tkddk0108" title="GitHub" target="_blank">
-          <img src="images/github.png" alt="GitHub" class="social-icon"> 
-        </a>
-        <a href="https://drive.google.com/drive/folders/1l9yyuKy89xDZf_ZuPju2pkuwYUs2b1b2?usp=drive_link8" title="Google Drive" target="_blank">
-          <img src="images/gdrive.png" alt="Google Drive" class="social-icon">
-        </a>
-        <a href="https://www.linkedin.com/in/sanga-kim-a59498328/" title="LinkedIn" target="_blank">
-          <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
-        </a>
-      </p> -->
+
+          <p>
+            <a href="https://github.com/tkddk0108" title="GitHub" target="_blank">
+              <img src="images/github.png" alt="GitHub" class="social-icon"> 
+            </a>
+            <a href="https://drive.google.com/drive/folders/1l9yyuKy89xDZf_ZuPju2pkuwYUs2b1b2?usp=drive_link8" title="Google Drive" target="_blank">
+              <img src="images/gdrive.png" alt="Google Drive" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/sanga-kim-a59498328/" title="LinkedIn" target="_blank">
+              <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+            </a>
+          </p> 
+
 
 
         <!-- <ul class="download-links">
@@ -319,19 +319,49 @@
       <div class="project-description" style="padding: 20px; border-radius: 8px; font-size: 16px; line-height: 1.8;">
         <blockquote>
           <p>
-            OpenAI 기반 챗봇 서비스 <strong>Aira</strong>의 개발에서 <strong>프론트엔드 구현</strong>을 담당하였으며,  
-            <strong>Auto Scaling Group</strong>을 구성하고 <strong>로드 밸런서(ALB)</strong>를 도입하여  
-            <strong>고가용성</strong>과 <strong>확장성</strong>을 갖춘 클라우드 인프라를 구축하였습니다.
+            OpenAI API 기반의 개인화 챗봇 서비스 <strong>Aira</strong>를 개발하고, 
+            <strong>AWS 클라우드</strong> 환경에서 <strong>고가용성(High Availability)</strong>과 
+            <strong>확장성(Scalability)</strong> 중심으로 아키텍처를 최적화한 프로젝트입니다.
           </p>
           <p>
-            또한, <strong>Prometheus</strong>와 <strong>Grafana</strong>를 활용하여  
-            <strong>실시간 모니터링 시스템</strong>을 구성하고, <strong>Locust</strong>를 이용한  
-            <strong>부하 테스트</strong>에도 협력하였습니다.
+            <strong>EC2 인스턴스</strong> 기반으로 프론트엔드·백엔드 서버를 구성하고, 
+            <strong>CodeDeploy</strong>와 <strong>Auto Scaling Group</strong>을 통해 
+            자동 배포 및 트래픽 확장 구조를 구현하였습니다.
+          </p>
+          <p>
+            <strong>Prometheus</strong>와 <strong>Grafana</strong>를 활용하여 
+            <strong>실시간 모니터링 시스템</strong>을 구성하고, 
+            <strong>Locust</strong>로 <strong>부하 테스트</strong>를 수행하여 병목 구간을 분석하고 
+            성능 개선 전략을 수립했습니다.
+          </p>
+          <p>
+            <strong>CPU 사용률 50% 초과 시 인스턴스 자동 증설</strong>, 
+            80% 이하 유지 정책을 적용하여 <strong>응답 시간을 약 70% 단축</strong>하고, 
+            최대 <strong>40명 동시 접속 환경</strong>에서도 안정적인 성능을 확보했습니다.
           </p>
           </blockquote>
         </div>
-          <p class="skills"><strong>What I Used?</strong> [AWS, EC2, ALB, Prometheus, ,Grafana, JavaScript, OpenAI API]</p>
-          <hr class="section-divider">
+          <p class="skills"><strong>What I Used?</strong></p>
+          <table class="used-table" style="width:100%; font-size:13px; margin-bottom:20px;">
+            <tbody>
+              <tr>
+                <td style="font-weight:bold; width:180px; vertical-align:top;">프론트엔드 개발</td>
+                <td style="vertical-align:top;">HTML/CSS/JS를 활용한 사용자 인터페이스 구현 및 Python 웹 서버 연동</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold; vertical-align:top;">백엔드 개발</td>
+                <td style="vertical-align:top;">FastAPI 기반 OpenAI API 호출 로직 구성 및 대화 히스토리 전송 처리</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold; vertical-align:top;">모니터링 구축</td>
+                <td style="vertical-align:top;">Prometheus로 메트릭 수집, Grafana로 대시보드 시각화 및 병목 현상 분석</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold; vertical-align:top;">문서화 및 발표자료 작성</td>
+                <td style="vertical-align:top;">전체 프로젝트 흐름 정리, 발표용 PPT 및 보고서 문서 작업 주도</td>
+              </tr>
+            </tbody>
+          </table>
 
         <h2>☁️ Aira-2: 자동 오류 감지와 트랜잭션 무결성</h2>
         <p style="font-size: 14px; color: #555; margin-top: -10px; margin-bottom: 8px;"><strong>25.01.16 – 25.02.19</strong></p>
@@ -346,31 +376,65 @@
       <div class="project-description" style="padding: 20px; border-radius: 8px; font-size: 16px; line-height: 1.8;">
         <blockquote>
           <p>
-            1차 프로젝트를 기반으로 <strong>유저 인증</strong>과 <strong>데이터 수집</strong> 기능을 추가하고,  
-            클라우드 아키텍처를 <strong>ECS Fargate 기반 서버리스 구조</strong>로 전면 개편하였습니다.
+            OpenAI 기반 챗봇 <strong>Aira</strong>의 기능 고도화와 <strong>클라우드 운영 안정성 향상</strong>을 위해,  
+            <strong>유저 인증</strong>, <strong>데이터 수집</strong>, <strong>트랜잭션 무결성 보장</strong>, <strong>자동 오류 감지</strong>,  
+            <strong>서버리스 아키텍처 개선</strong> 등을 목표로 프로젝트를 진행했습니다.
           </p>
           
           <p>
-            <strong>GitHub Actions</strong>를 활용한 <strong>CI/CD 파이프라인</strong>과  
-            <strong>ESLint</strong>, <strong>flake8</strong>을 통한 <strong>코드 품질 검사 자동화</strong>를 담당하였습니다.
+            1차 프로젝트에서 운영하던 <strong>EC2 기반 인프라</strong>를 <strong>ECS Fargate 기반 서버리스 구조</strong>로 전면 전환하고,  
+            <strong>VPC Endpoint</strong> 및 <strong>ALB</strong> 도입을 통해 <strong>네트워크 및 부하 분산 비용</strong>을 절감했습니다.
           </p>
           
           <p>
-            <strong>FIFO Queue</strong> 및 <strong>DLQ</strong>를 구성하여  
-            프론트엔드와 백엔드 간 <strong>트랜잭션 무결성</strong>을 보장하고,  
-            요청과 응답을 <strong>비동기 방식</strong>으로 안정적으로 처리할 수 있도록 설계하였습니다.
+            <strong>CI/CD 파이프라인</strong>은 <strong>GitHub Actions</strong> 기반으로 구축하고,  
+            <strong>ESLint</strong>와 <strong>flake8</strong>을 통해 코드 품질을 자동 검사하며,  
+            <strong>배포 오류 발생 시 자동 알림 및 롤백</strong> 기능까지 포함된 구조를 구현했습니다.
           </p>
           
           <p>
-            <strong>Route 53</strong>을 통해 <strong>도메인 네임 시스템(DNS)</strong>을 관리하고,  
-            <strong>Locust</strong>로 다양한 테스트 케이스 기반의 <strong>부하 테스트</strong>를 수행하여  
-            <strong>1,400명 이상</strong>의 <strong>동시 접속</strong> 환경에서도 안정적인 서비스를 검증하였습니다.
-          </p>  
+            <strong>AWS SQS</strong>와 <strong>DLQ</strong>를 활용해 <strong>비동기 메시지 처리</strong> 및  
+            <strong>트랜잭션 무결성</strong>을 보장하였고,  
+            <strong>Prometheus</strong>, <strong>Grafana</strong>, <strong>CloudWatch</strong>, <strong>AlertManager</strong>를 기반으로  
+            <strong>실시간 모니터링 및 알림 시스템</strong>을 구성했습니다.
+          </p>
+          
+          <p>
+            <strong>Locust</strong>를 활용한 <strong>스트레스 테스트</strong>를 통해  
+            <strong>최대 2,000명 규모 트래픽</strong>에서도 안정적으로 대응 가능함을 검증했습니다.
+          </p>
         </blockquote>
       </div>
-          <p class="skills"><strong>What I Used?</strong>  [ALB, ECR, Route 53, CloudFront, S3, CloudWatch, Locust, SQS, FIFO Queue, GitHub Actions]</p>
+          <p class="skills"><strong>What I Used?</strong></p>
+          <table class="used-table" style="width:100%; font-size:13px; margin-bottom:20px;">
+            <tbody>
+              <tr>
+                <td style="font-weight:bold; width:180px; vertical-align:top;">프론트엔드 개발</td>
+                <td style="vertical-align:top;">사용자 인증, 데이터 수집 화면 구현, API 연동</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold; vertical-align:top;">CI 파이프라인</td>
+                <td style="vertical-align:top;">GitHub Actions 기반 빌드/배포 자동화 설정 및 코드 품질 검사(flake8, ESLint) 적용</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold; vertical-align:top;">SQS 구성 및 분리</td>
+                <td style="vertical-align:top;">GPT API 호출 요청/응답 메시지를 비동기 큐로 처리하여 병렬성 확보</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold; vertical-align:top;">도메인 설정</td>
+                <td style="vertical-align:top;">Route 53 연동 및 HTTPS 인증서 발급 설정</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold; vertical-align:top;">Locust 부하 테스트</td>
+                <td style="vertical-align:top;">트래픽 시나리오 설계 및 분석 협업</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold; vertical-align:top;">발표 자료 및 문서 작업</td>
+                <td style="vertical-align:top;">프로젝트 전반 문서화 및 최종 발표 준비 담당</td>
+              </tr>
+            </tbody>
+          </table>
 
-          <hr class="section-divider">
 
         <h2>☁️ Aira-3: IaaS 클라우드 운영 자동화</h2>
         <p style="font-size: 14px; color: #555; margin-top: -10px; margin-bottom: 8px;"><strong>25.02.20 – 25.03.24</strong></p>
@@ -392,33 +456,57 @@
           </p>
           
           <p>
-            <strong>EKS 클러스터</strong>와 <strong>워커 노드</strong>는 <strong>Terraform</strong>을 통해 인프라를 코드로 관리하고 자동화하였으며,  
-            <strong>Ansible</strong>을 활용해 <strong>네임스페이스</strong> 및 <strong>어플리케이션 배포 설정 파일</strong>을 코드화하여  
-            <strong>Kubernetes 리소스 자동화 배포</strong>를 구현하였습니다.
+            <strong>클라우드 운영의 반복 작업 자동화</strong>와 <strong>인프라 효율성 및 안정성 향상</strong>을 목표로 한 프로젝트입니다.
           </p>
           
           <p>
-            <strong>ArgoCD</strong>를 이용해 <strong>GitOps 방식</strong>으로  
-            <strong>Application 네임스페이스</strong>에 <strong>자동 배포 파이프라인</strong>을 구성하였습니다.
+            <strong>Terraform</strong>을 활용하여 <strong>EKS 기반 인프라를 코드화(IaC)</strong>하고,  
+            <strong>Ansible</strong>로 <strong>Kubernetes 환경 설정</strong> 및 <strong>애플리케이션 배포 자동화</strong>를 구현했습니다.
           </p>
           
           <p>
-            <strong>Prometheus</strong>와 <strong>Grafana</strong>를 이용해 <strong>리소스 실시간 모니터링</strong> 시스템을 구축하였고,  
-            <strong>Locust</strong> 기반 <strong>부하 테스트</strong>를 통해  
-            <strong>HPA(Pod Auto Scaling)</strong> 기능의 유효성을 검증하였습니다.
+            <strong>GitHub Actions</strong>와 <strong>ArgoCD</strong>를 이용해 <strong>GitOps 기반 CI/CD 파이프라인</strong>을 구성하였으며,  
+            <strong>Prometheus</strong>와 <strong>Grafana</strong>로 <strong>실시간 리소스 모니터링 시스템</strong>을 구축했습니다.
           </p>
           
           <p>
-            또한 <strong>CronJob</strong>을 통한 <strong>주기적 백업</strong> 및 <strong>복구 테스트</strong>를 수행하여  
-            <strong>데이터 신뢰성</strong>을 확보하였습니다.
+            <strong>CloudWatch</strong>와 <strong>Cost Explorer</strong>를 연동하여 <strong>예산 초과 알림 체계</strong>를 설정하고,  
+            <strong>HPA(Horizontal Pod Autoscaler)</strong>를 통해 <strong>트래픽 부하에 따른 자동 확장</strong>을 구현했습니다.
+          </p>
+          
+          <p>
+            또한 <strong>CronJob</strong>을 활용하여 <strong>DB 백업 및 복원 자동화</strong> 기능도 포함하였습니다.
           </p>
         </blockquote>
       </div>
-        <p class="skills"><strong>What I Used?</strong> [ArgoCD, Terraform, Ansible, SQS, CronJob]</p>
+        <p class="skills"><strong>What I Used?</strong></p>
+        <table class="used-table" style="width:100%; font-size:13px; margin-bottom:20px;">
+          <tbody>
+            <tr>
+              <td style="font-weight:bold; width:180px; vertical-align:top;">Ansible 자동화 구성 담당</td>
+              <td style="vertical-align:top;">EKS 클러스터 상의 ArgoCD, Monitoring, Database 네임스페이스 및 하위 설정 파일들을 코드화(Playbook)하여 자동화</td>
+            </tr>
+            <tr>
+              <td style="font-weight:bold; vertical-align:top;">ArgoCD 운영 마무리 담당</td>
+              <td style="vertical-align:top;">Application manifest 등록, Git 연동 및 실시간 동기화 설정, UI 기반 운영 구성</td>
+            </tr>
+            <tr>
+              <td style="font-weight:bold; vertical-align:top;">모니터링 및 비용 최적화</td>
+              <td style="vertical-align:top;">Prometheus, Grafana, CloudWatch, Cost Explorer 연동으로 실시간 자원 분석 및 알림 체계 구축</td>
+            </tr>
+            <tr>
+              <td style="font-weight:bold; vertical-align:top;">CI/CD 파이프라인 설계</td>
+              <td style="vertical-align:top;">GitHub Actions를 이용한 자동 빌드, 테스트, 보안 점검 및 배포 프로세스 구현</td>
+            </tr>
+            <tr>
+              <td style="font-weight:bold; vertical-align:top;">DB 백업 자동화 및 문서화</td>
+              <td style="vertical-align:top;">CronJob 기반 주기적 백업, 전체 시스템 흐름 정리 및 문서화</td>
+            </tr>
+          </tbody>
+        </table>
 
 
 
-        <hr class="section-divider">
         <h1 id="projects">Projects</h1>
         <h2>🐶 Petogether</h2>
         <p style="font-size: 14px; color: #555; margin-top: -10px; margin-bottom: 8px;"><strong>25.03.20 – 25.06.11</strong></p>
@@ -443,20 +531,51 @@
         <div class="project-description" style="padding: 20px; border-radius: 8px; font-size: 16px; line-height: 1.8;">
           <blockquote>
             <p>
-              가족 구성원 모두가 <strong>강아지의 추억, 건강, 산책, 접종</strong>을 함께 기록하고 관리할 수 있는  
+              가족 구성원 모두가 반려견의 <strong>추억</strong>, <strong>건강</strong>, <strong>산책</strong>, <strong>접종</strong>을 함께 기록하고 관리할 수 있는  
               <strong>올인원 모바일 다이어리 앱</strong>입니다.
             </p>
             
             <p>
-              <strong>React Native (Expo)</strong>를 활용하여 <strong>모바일 UI</strong>를 구현하고,  
-              <strong>FastAPI</strong> 기반 백엔드를 <strong>MySQL 데이터베이스</strong>와 연동하여 전체 서비스를 설계·개발하였습니다.  
-              프론트엔드와 백엔드 모두에 적극 참여하여 <strong>전체 개발 흐름을 주도</strong>하였으며,  
-              <strong>팀장으로서 기획, 일정 조율, 코드 리뷰, 배포 관리 등 프로젝트 전반을 총괄</strong>하였습니다.
+              <strong>React Native (Expo)</strong>를 활용하여 모바일 UI를 구현하고,  
+              <strong>FastAPI</strong> 기반 백엔드를 <strong>MySQL</strong>과 연동하여 데이터 가공 및 저장을 처리했습니다.  
+              전체 서비스를 직접 설계·개발하였으며, <strong>프론트엔드</strong>와 <strong>백엔드</strong> 모두에 적극 참여했습니다.
             </p>
+            
+            <p>
+              팀장으로서 <strong>기획</strong>, <strong>일정 조율</strong>, <strong>코드 리뷰</strong>, <strong>배포 관리</strong> 등 프로젝트 전반을 총괄하였습니다.
+            </p>
+            
+            <p><strong>주요 기능:</strong></p>
+            <ul>
+              <li><strong>다이어리 작성</strong>: 사진과 메모를 통해 반려견의 일상을 기록하고 확인할 수 있습니다.</li>
+              <li><strong>산책 기록</strong>: 시간, 경로, 특이사항 등을 입력하고, 가족 간 공유하여 <strong>중복 산책 방지</strong>와 <strong>건강 루틴 관리</strong>가 가능합니다.</li>
+              <li><strong>예방접종 관리</strong>: 접종 이력, 알러지 반응, 완료 여부 등을 기록하고 <strong>일정 기반의 시각적 관리 기능</strong>을 제공합니다.</li>
+              <li><strong>체크리스트</strong>: 견종별 <strong>건강관리 루틴 자동 생성</strong> 및 완료 여부 체크 기능을 제공합니다.  
+                이를 위해 <strong>DB 구조를 견종 기준으로 세분화</strong>하였습니다.</li>
+            </ul>
           </blockquote>
         </div>
-        <p class="skills"><strong>What I Used?</strong> [React Native, FastAPI, MySQL, Git]</p>
-        <hr class="section-divider">
+        <p class="skills"><strong>What I Used?</strong></p>
+        <table class="used-table" style="width:100%; font-size:13px; margin-bottom:20px;">
+          <tbody>
+            <tr>
+              <td style="font-weight:bold; width:180px; vertical-align:top;">프론트엔드 개발</td>
+              <td style="vertical-align:top;">React Native (Expo)를 활용하여 모바일 UI 설계 및 구현</td>
+            </tr>
+            <tr>
+              <td style="font-weight:bold; vertical-align:top;">백엔드 개발</td>
+              <td style="vertical-align:top;">FastAPI 기반 서버와 MySQL 데이터베이스 연동, 데이터 가공 로직 개발</td>
+            </tr>
+            <tr>
+              <td style="font-weight:bold; vertical-align:top;">전체 시스템 설계</td>
+              <td style="vertical-align:top;">프론트엔드와 백엔드를 아우르는 서비스 흐름 설계 및 구조 구성</td>
+            </tr>
+            <tr>
+              <td style="font-weight:bold; vertical-align:top;">팀 리딩 및 협업 조율</td>
+              <td style="vertical-align:top;">프로젝트 팀장으로서 기획 수립, 일정 관리, 코드 리뷰, 배포 및 운영 관리 총괄</td>
+            </tr>
+          </tbody>
+        </table>
 
 
 
@@ -506,15 +625,34 @@
             </p>
           </blockquote>
         </div>
-        <p class="skills"><strong>What I Used?</strong>  [React Native, OpenAI API, ALB, RDS, S3, Github Actions]</p>
+        <p class="skills"><strong>What I Used?</strong></p>
+        <table class="used-table" style="width:100%; font-size:13px; margin-bottom:20px;">
+          <tbody>
+            <tr>
+              <td style="font-weight:bold; width:180px; vertical-align:top;">AWS 인프라 구성</td>
+              <td style="vertical-align:top;">AWS EC2, RDS, S3, ALB를 활용해 백엔드 서버 배포, 데이터베이스 구성, 정적 리소스 저장소 설계 및 트래픽 분산 환경 구축</td>
+            </tr>
+            <tr>
+              <td style="font-weight:bold; vertical-align:top;">프론트엔드 개발</td>
+              <td style="vertical-align:top;">React Native 기반 JS 중심 UI 구현, 사용자 입력 처리 및 OpenAI 연동 결과 출력 흐름 구성</td>
+            </tr>
+            <tr>
+              <td style="font-weight:bold; vertical-align:top;">백엔드 연동</td>
+              <td style="vertical-align:top;">FastAPI 서버와 프론트엔드 간 API 연동 구조 설계 및 데이터 흐름 테스트</td>
+            </tr>
+            <tr>
+              <td style="font-weight:bold; vertical-align:top;">문서화 및 발표자료 작성</td>
+              <td style="vertical-align:top;">한이음 공모전 발표 자료(PDF/PPT), 프로젝트 구조도 및 기능 설명서 작성 주도</td>
+            </tr>
+          </tbody>
+        </table>
 
 
-        <hr class="section-divider">
         <h1 id="contact">Contact</h1>
         <p>Email: <a href="mailto:cometokr1@naver.com">cometokr1@naver.com</a></p>
         <p>Phone: +82-10-7732-1085</p>
         <p>Google Drive: <a href="https://drive.google.com/drive/folders/1l9yyuKy89xDZf_ZuPju2pkuwYUs2b1b2?usp=drive_link8">Google Drive</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sanga-kim-a59498328/">SangA Kim</a></p>
+        <!-- <p>LinkedIn: <a href="https://www.linkedin.com/in/sanga-kim-a59498328/">SangA Kim</a></p> -->
         <p>GitHub: <a href="https://github.com/tkddk0108">tkddk0108</a></p>
 
 <!-- 
